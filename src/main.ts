@@ -1,7 +1,6 @@
 import fs from 'fs';
 
-// Use OOPS concepts *************************** Important
-
+//Oops Implementation
 class SecretSantaGame {
   inputFilePath: string = './src/input/employee.csv';
   outputFilePath: string = './src/output/secretsantagame.csv';
@@ -30,8 +29,6 @@ class SecretSantaGame {
     } catch (error: any) {
       console.log('error in constructor2', error.message);
     }
-
-    console.log('previous output', previousOutput);
 
     if (previousOutput) {
       previousOutput
@@ -140,4 +137,4 @@ class SecretSantaGame {
 
 const game = new SecretSantaGame(); //Reads CSV file sync
 
-game.generateEmployeesSecretChild();
+game.generateEmployeesSecretChild(); //Generates New CSV File
